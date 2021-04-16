@@ -1,7 +1,8 @@
 ﻿
+USE ACDW_CLMS_SHCN_BCBS
+GO
 
-
-CREATE PROCEDURE [ast].[usp_01LoadPCPIntoStg_OLD](@ClientKey INT, @DataDate DATE) --  [ast].[usp_01LoadPCPIntoStg]20,'2021-03-25'
+ALTER PROCEDURE [ast].[usp_01LoadPCPIntoStg_OLD](@ClientKey INT, @DataDate DATE) --  [ast].[usp_01LoadPCPIntoStg]20,'2021-03-25'
 AS
 ---Insert into stg and transform
 --stg table shud be same structure as list pcp
@@ -9,6 +10,8 @@ AS
 	--			 SELECT MAX(DataDate) FROM ACECAREDW.adw.fctProviderRoster
 BEGIN
 --Step 1: Insert into Staging
+
+--Step 1
 		
 		INSERT INTO			ast.LIST_PCP (  -- SELECT * FROM lst.LIST_PCP
 							[SrcFileName]
