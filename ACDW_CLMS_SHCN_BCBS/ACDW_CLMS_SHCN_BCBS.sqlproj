@@ -377,7 +377,6 @@
     <Build Include="adw\Stored Procedures\sp_GetDistinctValues.sql" />
     <Build Include="adw\Stored Procedures\sp_GetTableColumns.sql" />
     <Build Include="adw\Stored Procedures\pnm_NewMembersForTheMonth.sql" />
-    <Build Include="adw\Stored Procedures\zzLoad_Pdw_12_ClmsDetailsPartA.sql" />
     <Build Include="dbo\Stored Procedures\x_adi_NormalizeTable.sql" />
     <Build Include="ast\Stored Procedures\Pts_UpdateMembersCellAndHomePhone.sql" />
     <Build Include="adw\Stored Procedures\Transfrom_Pdw_02_DrgCode.sql" />
