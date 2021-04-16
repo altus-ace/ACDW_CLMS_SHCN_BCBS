@@ -5,7 +5,7 @@ CREATE PROCEDURE [adw].[PupdAllLineageRowsInAdiAndStg](@DataDate DATE) --  [adw]
 AS
 
 BEGIN
-
+		/*Updating all lineages from adi to staging*/
 		UPDATE		ast.MbrStg2_MbrData
 		SET			stgRowStatus = 'Exported'
 		WHERE		stgRowStatus = 'VALID'
